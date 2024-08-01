@@ -1,0 +1,93 @@
+This is a life counter for the card game MTG.
+
+To understand every detail it might be useful to have played a few games of
+the card game, especially the Commander format, but the basics are that this
+can be used to count life points and various different counters during a game
+of magic.
+
+===============================================================================
+When launched you are presented with a menu, which comes with 3 preset modes
+for counting life:
+* Commander 4p:
+    This sets up a 4 player game for the Commander format with a starting life
+    total of 40 life points.
+    Each player gets their own number/square on the screen with which they can
+    track their life total, commander damage and their counters.
+
+* Commander 1p (3 opponents):
+    This sets up a 4 player game for the Commander format with a starting life
+    total of 40 life points.
+    In this mode only the player using the life counter gets a number (but a
+    huge one) on screen with the corresponding commander damage and counters,
+    the remaining players (opponents) will have to track their life total
+    separately.
+
+* 1v1:
+    This sets up a 1 vs 1 game for a 2 player format with a starting life total
+    of 20.
+    The 2 players each get one number for tracking their life total.
+    Commander damage is not visible in this mode, but the counters are.
+
+Or if these modes are not suitable, it is possible to define a life total
+manually (in steps of 5) as well as a player count.
+If the player count equals 1 (the minimum) a separate option for the amount
+of opponents will be shown. This is used to set how many commander damage
+numbers should be visible (see also "Commander 1p (3 opponents)"). If the
+number of opponents is set to 0 commander damage is omitted (see also
+"1v1").
+
+When there are more than 4 players, the life total will be shown as simple
+text lines instead of using large/huge numbers due to the limited screen space.
+When one of the players has a life total of less than -99 or more than 999, the
+screen will also change to this limited mode.
+
+There are options to change the current song (via LEFT/RIGHT when selected) and
+for loading a save or autosave file.
+
+The "Load save" entry will load manually saved states.
+The "Load autosave" entry will load automatically saved state.
+
+NOTE about the autosave file:
+When a game has been started, states will be automatically saved after 15
+seconds when a change has occured, while resetting to 15 seconds each time
+another change has occured to avoid saving unecessarily/constantly.
+This is indicated on the bottom of the screen.
+
+The "Show controls" entry shows some details about how to use the counters when
+a game has been started.
+
+===============================================================================
+When a game has been started use the UP/DOWN buttons to change the life total
+of the currently selected player (which is indicated via a DOT next to the life
+total.
+The selected player can be changed via the SELECT button.
+The LEFT/RIGHT buttons will change the currently selected commander damage or
+poison/energy/experience/commander-tax counter.
+The selected commander damage or counter can be changed via the L/R buttons.
+
+The counters are indicated via a letter before the counter value:
+P = Poison
+E = Energy
+X = Experience
+C = Commander Tax
+
+When the life total is changed a number will appear on screen in the same color
+as the currently selected player, indicating how much the life total has
+changed, useful to correct mistakes. This number is reset and disappears after
+3 seconds.
+
+When the life total drops to 0 a deaths sound effect will be played and the
+player will be drawn in red (unless selected). The same applies when the
+amount of poison counters changes to 10.
+
+===============================================================================
+When the in game menu is accessed you are presented with a few menu items for
+saving/quitting/returning to the game/changing songs and showing controls, as
+well as, in case the game is a game with at least 2 and at most 4 players, a
+menu entry "Flip top numbers". This menu entry is useful in e.g. a game of
+commander where some of the people sit on the opposite side of the table.
+Selecting this will draw the player 1 and player 2 numbers upside down (as
+well as the corresponding commander damage and counters) such that they can be
+easily read by players across the table. It also inverts the button/dpad
+behaviour such that the GBA does not need to be rotated when performing inputs.
+

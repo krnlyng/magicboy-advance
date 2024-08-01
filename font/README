@@ -1,0 +1,4 @@
+The fonts in the source directory where generated using the following commands (make sure to install imagemagick):
+./convertnumbers.sh 120 VCR_OSD_MONO.ttf VCR_OSD_MONO_NUMBERS_HUGE 0x7c00 16 3 > ../source/VCR_OSD_MONO_NUMBERS_HUGE.c
+./convertnumbers.sh 60 VCR_OSD_MONO.ttf VCR_OSD_MONO_NUMBERS_LARGE 0x7fff 8 3 > ../source/VCR_OSD_MONO_NUMBERS_LARGE.c
+
